@@ -1,0 +1,25 @@
+{
+  "name": "textmorph",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "lint": "tsc"
+  },
+  "keywords": [
+    "text",
+    "morph",
+    "text transition",
+    "text animation",
+    "diff"
+  ],
+  "author": "parnavh",
+  "license": "MIT",
+  "description": "Animate text diffs character-by-character.",
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  }
+}
