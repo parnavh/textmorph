@@ -1,0 +1,13 @@
+.tm-add,
+.tm-remove {
+  display: inline-flex;
+  align-items: baseline;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: baseline;
+  transform-origin: left center;
+}
+
+.tm-same {
+  display: inline;
+}

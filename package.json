@@ -4,6 +4,13 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./css": "./dist/index.css"
+  },
   "scripts": {
     "build": "tsup",
     "lint": "tsc"
@@ -11,15 +18,21 @@
   "keywords": [
     "text",
     "morph",
-    "text transition",
     "text animation",
-    "diff"
+    "text transition",
+    "character diff",
+    "diff animation"
   ],
   "author": "parnavh",
   "license": "MIT",
   "description": "Animate text diffs character-by-character.",
   "devDependencies": {
+    "@types/diff-match-patch": "^1.0.36",
     "tsup": "^8.4.0",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "diff-match-patch": "^1.0.5",
+    "gsap": "^3.13.0"
   }
 }
