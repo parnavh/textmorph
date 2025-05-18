@@ -1,18 +1,18 @@
 {
   "name": "textmorph",
   "version": "0.1.0",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js"
     },
-    "./css": "./dist/index.css"
+    "./css": "./dist/styles/core.css"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "vite build",
     "lint": "tsc"
   },
   "keywords": [
@@ -28,8 +28,12 @@
   "description": "Animate text diffs character-by-character.",
   "devDependencies": {
     "@types/diff-match-patch": "^1.0.36",
-    "tsup": "^8.4.0",
-    "typescript": "^5.8.3"
+    "cssnano": "^7.0.7",
+    "postcss": "^8.5.3",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vite-plugin-dts": "^4.5.4",
+    "vite-plugin-static-copy": "^3.0.0"
   },
   "dependencies": {
     "diff-match-patch": "^1.0.5",

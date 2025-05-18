@@ -1,6 +1,5 @@
 import { diff_match_patch } from "diff-match-patch";
 import { gsap } from "gsap";
-import "./index.css";
 
 export function morphText(
   element: HTMLElement,
