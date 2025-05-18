@@ -9,7 +9,8 @@
       "import": "./dist/index.es.js",
       "require": "./dist/index.cjs.js"
     },
-    "./css": "./dist/styles/core.css"
+    "./css": "./dist/styles/core.css",
+    "./svelte": "./dist/svelte/TextMorph.svelte"
   },
   "scripts": {
     "build": "vite build",
@@ -33,7 +34,8 @@
     "typescript": "^5.8.3",
     "vite": "^6.3.5",
     "vite-plugin-dts": "^4.5.4",
-    "vite-plugin-static-copy": "^3.0.0"
+    "vite-plugin-static-copy": "^3.0.0",
+    "svelte": "^5.30.1"
   },
   "dependencies": {
     "diff-match-patch": "^1.0.5",

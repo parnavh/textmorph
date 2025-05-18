@@ -19,6 +19,15 @@ export default defineConfig({
             return result.css;
           },
         },
+        {
+          src: "src/**/*.svelte",
+          dest: "svelte",
+          transform: async (contents) => {
+            return contents
+              .toString()
+              .replace(/from\s+['"]@\/core['"]/g, `from 'textmorph'`);
+          },
+        },
       ],
     }),
   ],
