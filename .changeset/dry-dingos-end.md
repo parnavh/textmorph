@@ -1,5 +1,0 @@
----
-"textmorph": patch
----
-
-added readme
