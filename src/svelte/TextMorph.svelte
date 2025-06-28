@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount, afterUpdate } from "svelte";
-  import { morphText } from "textmorph";
+  import { morphText } from "@/core";
 
   export let text: string;
   let el: HTMLElement;
@@ -18,4 +18,3 @@
 </script>
 
 <span bind:this={el}>{prevText}</span>
-
