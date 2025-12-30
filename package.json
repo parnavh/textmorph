@@ -7,7 +7,8 @@
   "exports": {
     ".": {
       "import": "./dist/index.es.js",
-      "require": "./dist/index.cjs.js"
+      "require": "./dist/index.cjs.js",
+      "types": "./dist/index.d.ts"
     },
     "./css": "./dist/styles/core.css",
     "./svelte": "./dist/svelte/TextMorph.svelte"
