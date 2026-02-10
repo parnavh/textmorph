@@ -4,6 +4,7 @@
   "packageManager": "pnpm@10.25.0",
   "scripts": {
     "dev": "pnpm --parallel --filter './apps/*' dev",
-    "build": "pnpm -r build"
+    "build": "pnpm -r build",
+    "release": "pnpm run build && changeset publish"
   }
 }

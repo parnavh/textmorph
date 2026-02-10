@@ -15,8 +15,7 @@
   },
   "scripts": {
     "build": "vite build",
-    "lint": "tsc",
-    "release": "pnpm run build && changeset publish"
+    "lint": "tsc"
   },
   "keywords": [
     "text",
