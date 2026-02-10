@@ -33,7 +33,6 @@
     "url": "https://github.com/parnavh/textmorph.git"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.29.4",
     "@types/diff-match-patch": "^1.0.36",
     "cssnano": "^7.0.7",
     "postcss": "^8.5.3",
