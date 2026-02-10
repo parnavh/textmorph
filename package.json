@@ -1,51 +1,5 @@
 {
-  "name": "textmorph",
-  "version": "0.1.2",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.es.js",
-  "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.cjs.js",
-      "types": "./dist/index.d.ts"
-    },
-    "./css": "./dist/styles/core.css",
-    "./svelte": "./dist/svelte/TextMorph.svelte"
-  },
-  "scripts": {
-    "build": "vite build",
-    "lint": "tsc",
-    "release": "pnpm run build && changeset publish"
-  },
-  "keywords": [
-    "text",
-    "morph",
-    "text animation",
-    "text transition",
-    "character diff",
-    "diff animation"
-  ],
-  "author": "parnavh",
-  "license": "MIT",
-  "description": "Animate text diffs character-by-character.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/parnavh/textmorph.git"
-  },
-  "devDependencies": {
-    "@changesets/cli": "^2.29.4",
-    "@types/diff-match-patch": "^1.0.36",
-    "cssnano": "^7.0.7",
-    "postcss": "^8.5.3",
-    "svelte": "^5.30.1",
-    "typescript": "^5.8.3",
-    "vite": "^6.3.5",
-    "vite-plugin-dts": "^4.5.4",
-    "vite-plugin-static-copy": "^3.0.0"
-  },
-  "dependencies": {
-    "diff-match-patch": "^1.0.5",
-    "gsap": "^3.13.0"
-  }
+  "name": "text-morph-monorepo",
+  "private": true,
+  "packageManager": "pnpm@10.25.0"
 }
