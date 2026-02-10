@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount, afterUpdate } from "svelte";
-  import { morphText } from "@/core";
+  import { morphText } from "../core";
 
   export let text: string;
   let el: HTMLElement;

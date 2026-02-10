@@ -19,6 +19,9 @@ importers:
       sharp:
         specifier: ^0.34.2
         version: 0.34.5
+      textmorph:
+        specifier: workspace:*
+        version: link:../../packages/textmorph
 
   packages/textmorph:
     dependencies:
